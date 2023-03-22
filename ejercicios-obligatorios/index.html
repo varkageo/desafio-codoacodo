@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Desafío-HTML-basico</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><H1>UNIVERSIDAD DESAFIO</H1></div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#myv">Misión y Visión</a></li>
+                <li><a href="#datos">Datos Universitarios</a></li>
+                <li><a href="#footer">Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="container">   
+            <div class="bienvenido">
+                <h2>Bienvenido a nuestra Univerdiad Desafio</h2>
+                <br>
+                <h3>Conoce un poco nuestra Univerdiad</h3>
+                <img src="/img/fadu.jpg" alt="LA_FADU">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, nostrum voluptatem et facilis error eligendi velit aliquam eveniet quia vitae dicta nam, doloremque quaerat itaque commodi, asperiores temporibus voluptatum. Reiciendis?
+                Saepe natus id, doloribus repellat adipisci hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, placeat nulla, omnis quod sed voluptatibus perferendis est tempore voluptates in laboriosam aperiam esse odio eaque, harum quasi culpa non distinctio? </p><br><p>Pipsa quasi totam ratione nulla animi similique sunt accusantium fugiat, ipsum deleniti eum. Similique adipisci nobis omnis doloremque, odio quis maxime ducimus? Ratione.
+                Debitis assumenda itaque est dolore, natus accusantium vel aperiam voluptatum sequi fugiat id quo quaerat corrupti, laudantium eaque corporis nihil nam ipsa quisquam temporibus voluptas consequuntur. Pariatur iusto exercitationem laborum?</p>
+                
+                <br>
+                <div class="por-que">
+                    <h3>Por que elegir nuetra universidad?</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam necessitatibus, ut deleniti officiis libero porro ratione voluptatum debitis fugiat. Sunt, vero ad! Alias dicta quam cupiditate id voluptatum, velit aliquid.
+                    Alias, quos obcaecati. Inventore iure nam illo atque repellendus veniam! Enim itaque soluta nisi maxime unde iste blanditiis eos laborum mollitia totam deserunt consequatur cupiditate, quam eligendi eaque aut cum.</p>
+                    
+                </div>
+                <br>
+                <div id="myv">
+                    <div class="mision-y-vision">
+                        <h4>Nuestra Misión</h4>
+                        <br>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, repudiandae dignissimos natus illo minima officiis harum! Voluptas voluptatibus repudiandae quas eos repellat commodi.</p>
+
+                        <br>
+                        <h4>Nuestra Visión</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusantium, distinctio aliquid voluptate laborum aliquam inventore sunt repudiandae impedit sapiente.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <br>
+            <fieldset id="datos">
+                <legend><h2>Regrsitrate acá para formar parte de nuestra Universidad</h2></legend>
+                <form action="guardar">
+                    
+                    <div class="datos-personales">
+                        <h3>Datos Personales</h3>
+                        <label for="nombre">Nombre/s</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su/s nombre/s" maxlength="20">
+                        
+                        <label for="apellido">Apellido/s</label>
+                        <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su/s apellido/s" maxlength="20">
+                        <br>
+                        <br>
+                        <label for="dni">Ingerese su DNI:</label>
+                        <input type="number" id="" name="" required placeholder="sin puntos ni comas" max="99999999">
+                        <br>
+                        <br>
+                        <label for="mail">Ingrese su mail:</label>
+                        <input type="email" id="mail" name="mail" required placeholder="ejemplo@gmail.com">
+                        <br>
+                        <br>
+                        <label for="numtel">Número de teléfono:</label>
+                        <input type="number" id="numtel" name="numtel" required placeholder="Ingrese su número">
+                        <br>
+                        <br>
+                        <h4>Ingrese su direccion</h4>
+                        <label for="calle">Calle</label>
+                        <input type="text" id="calle" name="calle" required placeholder="nombre de calle" maxlength="30">
+                        <label for="altura">Altura:</label>
+                        <input type="number" id="altura" name="altura" required placeholder="numero de calle" maxlength="6">
+                        <label for="depto">Depto</label>
+                        <input type="text" id="depto" name="depto" required maxlength="10">
+                        <br>
+                        <br>
+                        <label for="ciudad">Ciudad</label>
+                        <select name="ciudad" id="ciudad" required>
+                            <option value="1"></option>
+                            <option value="2">CABA</option>
+                            <option value="3">GBA</option>
+                        </select>
+                        <label for="localidad">Localidad</label>
+                        <select name="localidad" id="localidad" required>
+                            <option value="1"></option>
+                            <option value="2">Tres de Febrero</option>
+                            <option value="3">Moron</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="datos-universitarios">
+                        <h3>Datos Universitarios</h3>
+                        <h4>Eres alumno regular o ingresante?</h4>
+                        <label for="alumno">Alumno regular:</label>
+                        <input type="radio" id="alumno" name="alumno">
+                        <label for="ingresante">Ingresante:</label>
+                        <input type="radio" id="ingresante" name="alumno">
+                        <br>
+                        <br>
+                        <label for="carreras">Elige tu carrera:</label>
+                        <select name="carreras" id="carreras">
+                            <option value="1">Carreras</option>
+                            <option value="3">Arquitectura</option>
+                            <option value="2">Diseño de imagen y sonido</option>
+                            <option value="5">Diseño de indumentaria</option>
+                            <option value="6">Diseño grafico</option>
+                            <option value="4">Diseño industrial</option>    
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="elige-tusede">
+                        <h3>Elige tu sede de cursada</h3>
+                        <label for="sede">Sedes:</label>
+                        <select name="sede" id="sede">
+                            <option value="1">Sedes de cursada</option>
+                            <option value="2">Ciudad Universitaria FADU</option>
+                            <option value="3">Ciudad Universitaria Exactas</option>
+                            <option value="4">Ciudad Universitaria Pabellón 3</option>
+                            <option value="5">Ciudad Universitaria Pabellón 2</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit">Enviar Datos</button>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+    <br>
+    <br>
+
+    <footer id="footer">
+        <p>&copy;2023 Desafio HTML 1 Alumno:Jesus Zerpa -- DNI:95808288 -- Comisión:23047</p>
+    </footer>
+
+    
+</body>
+</html>
